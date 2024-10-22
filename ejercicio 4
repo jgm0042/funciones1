@@ -1,0 +1,24 @@
+Funcion cambio <- ConversionMoneda (opc, op)
+	Segun opc Hacer
+		1:
+			cambio <- op * 0.92
+		2:
+			cambio <- op * 1.20
+		3:
+			cambio <- op * 0.0061
+		De Otro Modo:
+			escribir "Escribe un numero del 1 al 3"
+	Fin Segun
+	
+FinFuncion
+
+Algoritmo moneda
+	escribir "Selecciona la moneda a cambiar ( 1 = dolares, 2 = libras, 3 = yenes )"
+	Leer opc
+	escribir "seleciona la cantidad"
+	Leer op
+	cantidad <- ConversionMoneda(opc, op)
+	escribir cantidad
+
+	
+FinAlgoritmo
